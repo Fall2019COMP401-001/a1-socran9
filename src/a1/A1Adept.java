@@ -74,7 +74,7 @@ public class A1Adept {
 		String averagevalue = String.format("%.2f", average);
 		System.out.println("Biggest:" + " " + biggestspender + " " + "(" + biggestvalue + ")" );
 		System.out.println("Smallest:" + " " + smallestspender + " " + "(" + smallestvalue + ")" );
-		System.out.println("Average" + " " + averagevalue);
+		System.out.println("Average:" + " " + averagevalue);
 
 	}
 }
