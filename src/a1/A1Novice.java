@@ -11,6 +11,7 @@ public class A1Novice {
 		// Your code follows here.
 		int cust = scan.nextInt();
 		String [] names = new String [cust];
+		// A for loop to loop through all the customers names and items bought
 		for (int i=0; i<names.length; i++) {
 			String firstname = scan.next();
 			String lastname = scan.next();
@@ -18,6 +19,7 @@ public class A1Novice {
 			int items = scan.nextInt();
 			String [] things = new String [items];
 			Double totalprice = 0.00;
+			// A second for loop inside the first for loop for the specifics of one item bought
 			for (int j=0; j<things.length; j++) {
 				int quantity = scan.nextInt();
 				scan.next();
