@@ -25,17 +25,16 @@ public class A1Jedi {
 		int[] totalQuantityBought = new int[countofitems];
 		int[] differentCustomersBought = new int[countofitems];
 		
+		
 		for(int i = 0; i < customerCount; i++) {
 			boolean[] foodAlreadyBought = new boolean[countofitems];
-			// Initialize boolean array
-			for(int y = 0; y < countofitems; y++) { foodAlreadyBought[y] = false;}
 			customerNames[i] = scan.next() + " " + scan.next();
 			int customerItemCount = scan.nextInt();
 			for(int y = 0; y < customerItemCount; y++) {
 				int specificItemCount = scan.nextInt();
 				int indexPos = itemList.indexOf(scan.next());
-				if (foodAlreadyBought[y] == false) {
-					foodAlreadyBought[y] = true;
+				if (foodAlreadyBought[indexPos] == false) {
+					foodAlreadyBought[indexPos] = true;
 					differentCustomersBought[indexPos] += 1;
 				}
 				totalQuantityBought[indexPos] += specificItemCount;
